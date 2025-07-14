@@ -1,0 +1,20 @@
+name: "Partha"
+output_dir: "docs"
+site:
+  cname: palclim.com
+navbar:
+  title: "Partha"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "CLim"
+      menu:
+        - text: "18Osl"
+          href: osl18.html
+
+
+output:
+  html_document:
+    theme: cerulean
+    highlight: textmate
+    self_contained: false

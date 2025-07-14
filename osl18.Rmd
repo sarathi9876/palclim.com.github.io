@@ -1,0 +1,99 @@
+---
+title: ""
+site: "index.html"
+output:
+  html_document:
+    theme: cerulean
+    highlight: textmate
+    self_contained: false
+---
+
+<style>
+/* Override Bootstrap container padding */
+body > .container-fluid {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Centering section title */
+.section-title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Subtitle for download section */
+.download-note {
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  margin-bottom: 0px;
+}
+
+/* Download button container */
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 5px;
+}
+
+.download-box {
+  background-color: #f8f9fa;
+  border: 2px solid #007bff33;
+  border-radius: 10px;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 14.5px;
+  font-family: 'Segoe UI', sans-serif;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #007bff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.download-box:hover {
+  background-color: #e9f4ff;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  color: #0056b3;
+}
+
+
+/* Centered container for the iframe */
+.centered-iframe-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.responsive-iframe {
+  width: 90vw;
+  height: 60vw; /* Dynamically adjusts based on screen size */
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
+}
+</style>
+
+<div class="section-title">
+  δ<sup>18</sup>O-SL: <span style="font-weight: normal;">A tool to correct sea level associated δ<sup>18</sup>O changes</span>
+</div>
+
+<div style="text-align: center; margin-bottom: 25px;">
+  <div style="display: inline-flex; align-items: center; flex-wrap: wrap; gap: 18px; font-family: 'Segoe UI', sans-serif; font-size: 16px;">
+   <span style="font-weight: 600;">📥 Download sample input files to try:</span>
+   <a class="download-box" href="Trial/osl18/d18o.xlsx" download>Age–δ<sup>18</sup>O</a>
+   <a class="download-box" href="Trial/osl18/SSL.xlsx" download>Age–Sea Level</a>
+   <a class="download-box" href="Trial/osl18/temp.xlsx" download>Age–Temperature</a>
+  </div>
+</div>
+
+
+<div class="centered-iframe-wrapper">
+  <iframe class="responsive-iframe" src="https://partha679.shinyapps.io/18osl/"></iframe>
+</div>
