@@ -173,7 +173,7 @@ html, body {
    <img src="logo/Palclim.png" alt="PalClim Logo" style="max-width: 100%; max-height: 120px; object-fit: contain;">
   </div>
   <div class="palclim-title" style="line-height: 1.2;">
-   <h1 style="margin: 0; font-size: 40px; font-weight: 700; color: #1a237e;">PalClim</h1>
+   <h1 style="margin: 0; font-size: 40px; font-weight: 700; color: #1a237e;">PALClim</h1>
    <div class="subtitle" style="font-size: 16px; color: #444;">A Platform for Analytical Learning on Climate Interactions </div>
   </div>
 </div>
