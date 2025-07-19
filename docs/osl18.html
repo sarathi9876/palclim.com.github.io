@@ -58,6 +58,7 @@ if (window.hljs) {
 
 
 
+<link rel="stylesheet" href="navbar.css" type="text/css" />
 
 
 
@@ -238,7 +239,7 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Partha</a>
+      <a class="navbar-brand" href="index.html">PALClim</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -247,13 +248,13 @@ $(document).ready(function () {
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    CLim
+    Clim
      
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="osl18.html">18Osl</a>
+      <a href="osl18.html">18OSW</a>
     </li>
   </ul>
 </li>
@@ -285,6 +286,8 @@ $(document).ready(function () {
 </div>
 
 
+<!-- Set favicon -->
+<p><link rel="icon" type="image/png" href="logo/Palclim.png"></p>
 <style>
 
 .navbar {
@@ -306,7 +309,7 @@ body > .container-fluid {
 /* Section title */
 .section-title {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 5x;
   font-size: 24px;
   font-weight: bold;
   font-family: sans-serif;
@@ -357,13 +360,15 @@ body > .container-fluid {
   border: none;
   border-radius: 0;
 }
+
+
 </style>
 <div
 style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 25px; padding: 0 20px;">
 <div class="section-title" style="margin: 0;">
 <img src="logo/18osw.png" alt="TIE-Age Logo" class="logo" style="height: 85px; vertical-align: middle; margin-right: 10px;">
-δ<sup>18</sup>O-SL: <span style="font-weight: normal;">A tool to correct
-sea level associated δ<sup>18</sup>O changes</span>
+δ<sup>18</sup>O-SW: <span style="font-weight: normal;">A tool to
+calculate δ<sup>18</sup>O-Sea water from δ<sup>18</sup>O-Calcite </span>
 </div>
 <div class="download-buttons"
 style="display: flex; align-items: center; gap: 12px;">
@@ -375,7 +380,8 @@ Level</a>
 </div>
 </div>
 </style>
-<div class="centered-iframe-wrapper">
+<div class="centered-iframe-wrapper"
+style="margin-top: 0; padding-top: 0;">
 <p><iframe class="responsive-iframe" src="https://partha679.shinyapps.io/18osl/"></iframe></p>
 </div>
 

@@ -8,6 +8,10 @@ output:
     self_contained: false
 ---
 
+<!-- Set favicon -->
+<link rel="icon" type="image/png" href="logo/Palclim.png">
+
+
 <style>
 
 .navbar {
@@ -29,7 +33,7 @@ body > .container-fluid {
 /* Section title */
 .section-title {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 5x;
   font-size: 24px;
   font-weight: bold;
   font-family: sans-serif;
@@ -80,6 +84,8 @@ body > .container-fluid {
   border: none;
   border-radius: 0;
 }
+
+
 </style>
 
 
@@ -87,7 +93,7 @@ body > .container-fluid {
 <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 25px; padding: 0 20px;">
   <div class="section-title" style="margin: 0;">
    <img src="logo/18osw.png" alt="TIE-Age Logo" class="logo" style="height: 85px; vertical-align: middle; margin-right: 10px;">
-   δ<sup>18</sup>O-SL: <span style="font-weight: normal;">A tool to correct sea level associated δ<sup>18</sup>O changes</span>
+   δ<sup>18</sup>O-SW: <span style="font-weight: normal;">A tool to calculate δ<sup>18</sup>O-Sea water from δ<sup>18</sup>O-Calcite </span>
   </div>
 
   <div class="download-buttons" style="display: flex; align-items: center; gap: 12px;">
@@ -100,7 +106,6 @@ body > .container-fluid {
 
 </style>
 
-
-<div class="centered-iframe-wrapper">
+<div class="centered-iframe-wrapper" style="margin-top: 0; padding-top: 0;">
   <iframe class="responsive-iframe" src="https://partha679.shinyapps.io/18osl/"></iframe>
 </div>

@@ -8,9 +8,11 @@ output:
     self_contained: false
 ---
 
+<!-- Set favicon -->
+<link rel="icon" type="image/png" href="logo/Palclim.png">
+
 <!-- 🌳 Earthy Background Style -->
 <style>
-
 
 /* Change background and text color of top navbar */
 .navbar {
@@ -18,128 +20,128 @@ output:
   border: none;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+  background: #d1d7c5;
+  color: #1f261f;
+  position: relative;
+}
 
-  html, body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    overflow-x: hidden;
-    background: #d1d7c5;
-    color: #1f261f;
-    position: relative;
-  }
+.background-scene {
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 
-  .background-scene {
-    position: fixed;
-    z-index: -10;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
+.sun {
+  position: absolute;
+  top: 40px;
+  right: 60px;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #ffdf6c, #ffb300);
+  border-radius: 50%;
+  box-shadow: 0 0 40px rgba(255, 200, 0, 0.4);
+  animation: pulseSun 6s ease-in-out infinite;
+}
 
-  .sun {
-    position: absolute;
-    top: 40px;
-    right: 60px;
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(circle, #ffdf6c, #ffb300);
-    border-radius: 50%;
-    box-shadow: 0 0 40px rgba(255, 200, 0, 0.4);
-    animation: pulseSun 6s ease-in-out infinite;
-  }
+@keyframes pulseSun {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.9; }
+}
 
-  @keyframes pulseSun {
-    0%, 100% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.05); opacity: 0.9; }
-  }
+.cloud {
+  position: absolute;
+  top: 80px;
+  background: #ffffffcc;
+  border-radius: 50px;
+  width: 180px;
+  height: 60px;
+  box-shadow: 60px 0 #ffffffcc, 120px 10px #ffffffcc;
+  animation: floatCloud 80s linear infinite;
+}
 
-  .cloud {
-    position: absolute;
-    top: 80px;
-    background: #ffffffcc;
-    border-radius: 50px;
-    width: 180px;
-    height: 60px;
-    box-shadow: 60px 0 #ffffffcc, 120px 10px #ffffffcc;
-    animation: floatCloud 80s linear infinite;
-  }
+.cloud:nth-child(2) {
+  top: 140px;
+  left: 40%;
+  animation-delay: -30s;
+  transform: scale(0.8);
+}
 
-  .cloud:nth-child(2) {
-    top: 140px;
-    left: 40%;
-    animation-delay: -30s;
-    transform: scale(0.8);
-  }
+@keyframes floatCloud {
+  0% { left: -300px; }
+  100% { left: 120%; }
+}
 
-  @keyframes floatCloud {
-    0% { left: -300px; }
-    100% { left: 120%; }
-  }
+.mountains {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 350px;
+  background: linear-gradient(to top, #4a5e44, transparent 60%);
+  clip-path: polygon(0% 100%, 10% 60%, 25% 80%, 40% 50%, 60% 80%, 75% 55%, 90% 75%, 100% 40%, 100% 100%);
+  z-index: -9;
+}
 
-  .mountains {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 350px;
-    background: linear-gradient(to top, #4a5e44, transparent 60%);
-    clip-path: polygon(0% 100%, 10% 60%, 25% 80%, 40% 50%, 60% 80%, 75% 55%, 90% 75%, 100% 40%, 100% 100%);
-    transform: translateY(10px);
-    z-index: -9;
-  }
+.waves {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background: #2f4f4f;
+  clip-path: ellipse(80% 100% at 50% 100%);
+  z-index: -8;
+}
 
-  .waves {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 80px;
-    background: #2f4f4f;
-    clip-path: ellipse(80% 100% at 50% 100%);
-    z-index: -8;
-  }
+.main-container {
+  padding: 20px 30px;       /* Reduced padding */
+  margin-top: 20px;         /* ✅ Added to move content toward top */
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 10;
+  position: relative;
+}
 
-  .main-container {
-    padding: 50px 30px;
-    max-width: 960px;
-    margin: 0 auto;
-    z-index: 10;
-    position: relative;
-  }
+.palclim-logo {
+  font-size: 84px;
+  display: inline-block;
+  margin-right: 26px;
+  vertical-align: middle;
+}
 
-  .palclim-logo {
-    font-size: 84px;
-    display: inline-block;
-    margin-right: 26px;
-    vertical-align: middle;
-  }
+.palclim-title {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 80%;
+}
 
-  .palclim-title {
-    display: inline-block;
-    vertical-align: middle;
-    max-width: 80%;
-  }
+.palclim-title h1 {
+  font-size: 36px;
+  margin-bottom: 6px;
+  background: linear-gradient(to right, #2e4728, #132c10);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
 
-  .palclim-title h1 {
-    font-size: 36px;
-    margin-bottom: 6px;
-    background: linear-gradient(to right, #2e4728, #132c10);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-  }
+.palclim-title .subtitle {
+  font-size: 18px;
+  color: #2f372e;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
 
-  .palclim-title .subtitle {
-    font-size: 18px;
-    color: #2f372e;
-    font-weight: 600;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-  }
-
- .palclim-description {
+.palclim-description {
   margin-top: 30px;
   font-size: 18px;
   line-height: 1.85;
@@ -147,12 +149,11 @@ output:
   color: #007acc;
 }
 
-
-  .support-note {
-    font-style: italic;
-    color: #007acc;
-    margin-top: 16px;
-  }
+.support-note {
+  font-style: italic;
+  color: #007acc;
+  margin-top: 16px;
+}
 </style>
 
 <!-- 🌎 Background Elements -->
@@ -167,55 +168,50 @@ output:
 <!-- 🚀 Main Section -->
 <div class="main-container">
 
-  <div class="palclim-hero">
-   <span class="palclim-logo">🌍</span>
-   <div class="palclim-title">
-   <h1><b>PalClim</b></h1>
-   <div class="subtitle">Supporting climate and paleoclimate research globally</div>
-   </div>
+<div class="palclim-hero" style="display: flex; align-items: center; gap: 20px; padding: 20px 30px; background: white; border-radius: 16px; box-shadow: 0 4px 14px rgba(0,0,0,0.1); margin-bottom: 20px;">
+  <div class="palclim-logo" style="display: flex; align-items: center; justify-content: center; width: 90px; height: 90px;">
+   <img src="logo/palclim.png" alt="PalClim Logo" style="max-width: 100%; max-height: 120px; object-fit: contain;">
   </div>
-
-  <div class="palclim-description">
-   <p>
-      <b>PalClim</b> is a community-driven digital initiative focused on developing accessible, browser-based tools for climate and paleoclimate researchers. These tools simplify complex geochemical calculations, facilitate δ<sup>18</sup>O corrections, visualize proxy datasets, and much more — all without the need for installation or programming expertise.
-    </p>
-   <p>
-      Designed for early-career scientists, educators, and field researchers, PalClim combines robust science with user-friendly interfaces. Whether you're analyzing marine sediment records, interpreting temperature proxies, or teaching isotope geochemistry, PalClim aims to support your work.
-    </p>
-   <p>
-      The entire platform — including hosting and tool development — is built and maintained by <b>Dr. Partha Sarathi Jena</b>, a postdoctoral researcher at the University of São Paulo, Brazil.
-    </p>
-   <p class="support-note">
-      This website and its services are personally funded by Dr. Jena without any sponsorship. If you find PalClim useful in your research or teaching, you're warmly welcome to support its development and future tools.
-    </p>
+  <div class="palclim-title" style="line-height: 1.2;">
+   <h1 style="margin: 0; font-size: 40px; font-weight: 700; color: #1a237e;">PalClim</h1>
+   <div class="subtitle" style="font-size: 16px; color: #444;">A Platform for Analytical Learning on Climate Interactions </div>
   </div>
 </div>
 
-<!-- Optional Typed.js (Only if visible area added) -->
-<!--
-<script>
-  var typed = new Typed('#typed', {
-    strings: [
-      "Tools for Climate Researchers",
-      "Open Access Paleoclimate Apps",
-      "δ18O Correction & More",
-      "Created by Dr. Partha Sarathi Jena"
-    ],
-    typeSpeed: 40,
-    backSpeed: 18,
-    backDelay: 1800,
-    loop: true
-  });
-</script>
--->
+<div class="palclim-about" style="background: white; border-radius: 16px; box-shadow: 0 4px 14px rgba(0,0,0,0.08); padding: 30px; margin-bottom: 30px; color: #0d47a1; font-size: 16px; line-height: 1.6; text-align: justify;">
+  <p>
+    <b>PalClim</b> is a digital initiative focused on developing accessible, browser-based tools for climate and paleoclimate researchers. These tools simplify complex geochemical calculations, facilitate δ<sup>18</sup>O corrections, visualize proxy datasets, and much more — all without the need for installation or programming expertise.
+  </p>
+  <p>
+    Designed for early-career scientists, educators, and field researchers, PalClim combines robust science with user-friendly interfaces. Whether you're analyzing marine sediment records, interpreting temperature proxies, or teaching isotope geochemistry, PalClim aims to support your work.
+  </p>
+  <p>
+    The entire platform — including hosting and tool development — is built and maintained by 
+    <b>
+      <a href="https://www.parthasarathi.info" target="_blank" style="color: #0d47a1; text-decoration: none;">
+        Dr. Partha Sarathi Jena
+      </a>
+    </b>, a postdoctoral researcher at the University of São Paulo, Brazil.
+  </p>
+  <p style="font-style: italic; font-weight: 350;">
+    This website and its services are personally funded by Dr. Jena without any sponsorship. If you find PalClim useful in your research or teaching, you're warmly welcome to support its development and future tools. If you know Dr. Jena personally contact him for donations. 
+  </p>
+</div>
 
 <!-- Ko-fi Floating Donate Button -->
 <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
 <script>
   kofiWidgetOverlay.draw('partha679', {
     'type': 'floating-chat',
-    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.text': 'Support',
     'floating-chat.donateButton.background-color': '#3e5d3a',
     'floating-chat.donateButton.text-color': '#fff'
   });
 </script>
+
+<!-- PayPal.me Button with Logo -->
+<a href="https://paypal.me/partha679" target="_blank" 
+   style="position: fixed; bottom: 25px; right: 25px; z-index: 9999;">
+  <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" 
+       alt="Donate with PayPal" style="height: 50px;">
+</a>

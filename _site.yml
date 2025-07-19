@@ -3,13 +3,13 @@ output_dir: "docs"
 site:
   cname: palclim.com
 navbar:
-  title: "Partha"
+  title: "PALClim"
   left:
     - text: "Home"
       href: index.html
-    - text: "CLim"
+    - text: "Clim"
       menu:
-        - text: "18Osl"
+        - text: "18OSW"
           href: osl18.html
     - text: "Chron"
       menu:
@@ -19,6 +19,8 @@ navbar:
 
 output:
   html_document:
-    theme: cerulean
+    theme: cosmo
     highlight: textmate
     self_contained: false
+    css: navbar.css         # ← add this line to link your custom CSS
+

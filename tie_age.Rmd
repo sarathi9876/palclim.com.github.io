@@ -8,6 +8,8 @@ output:
     self_contained: false
 ---
 
+<!-- Set favicon -->
+<link rel="icon" type="image/png" href="logo/Palclim.png">
 
 <style>
 
@@ -124,9 +126,8 @@ body > .container-fluid {
 
   <div class="download-buttons" style="display: flex; align-items: center; gap: 12px;">
    <span style="font-weight: 600;">📥 Sample inputs:</span>
-   <a class="download-box" href="Trial/osl18/d18o.xlsx" download>Age–δ<sup>18</sup>O</a>
-   <a class="download-box" href="Trial/osl18/SSL.xlsx" download>Age–Sea Level</a>
-   <a class="download-box" href="Trial/osl18/temp.xlsx" download>Age–Temperature</a>
+   <a class="download-box" href="Trial/TIE_age/Age.xlsx" download>Reference (Age–Parameter)</sup></a>
+   <a class="download-box" href="Trial/TIE_age/depth.xlsx" download>Undated core (Depth-Parameter)</a>
   </div>
 </div>
 
