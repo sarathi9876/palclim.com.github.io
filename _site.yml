@@ -11,6 +11,10 @@ navbar:
       menu:
         - text: "18Osl"
           href: osl18.html
+    - text: "Chron"
+      menu:
+        - text: "Tie age"
+          href: tie_age.html
 
 
 output:

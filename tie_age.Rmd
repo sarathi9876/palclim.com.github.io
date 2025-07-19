@@ -8,6 +8,7 @@ output:
     self_contained: false
 ---
 
+
 <style>
 
 .navbar {
@@ -15,8 +16,7 @@ output:
   border: none;
 }
 
-
-/* Remove padding and allow full width */
+/* Full-width container */
 body > .container-fluid {
   max-width: 100% !important;
   padding: 0 !important;
@@ -26,16 +26,48 @@ body > .container-fluid {
   background: none;
 }
 
-/* Section title */
+/* Section header */
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+/* Logo */
+.logo {
+  height: 65px;
+  margin-right: 15px;
+}
+
+/* Title */
+.title-text {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #222;
+  margin-top: 5px;
+}
+
+.subtitle-text {
+  font-size: 14px;
+  color: #555;
+  font-family: sans-serif;
+  font-weight: normal;
+  margin-top: 4px;
+}
+
+/* Subtitle center text */
 .section-title {
   text-align: center;
-  margin-top: 20px;
   font-size: 24px;
   font-weight: bold;
   font-family: sans-serif;
+  margin-bottom: 5px;
 }
 
-/* Subtitle */
 .download-note {
   text-align: center;
   font-size: 15px;
@@ -80,14 +112,14 @@ body > .container-fluid {
   border: none;
   border-radius: 0;
 }
+
+
 </style>
-
-
 
 <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 25px; padding: 0 20px;">
   <div class="section-title" style="margin: 0;">
-   <img src="logo/18osw.png" alt="TIE-Age Logo" class="logo" style="height: 85px; vertical-align: middle; margin-right: 10px;">
-   δ<sup>18</sup>O-SL: <span style="font-weight: normal;">A tool to correct sea level associated δ<sup>18</sup>O changes</span>
+   <img src="logo/tie_age.png" alt="TIE-Age Logo" class="logo" style="height: 65px; vertical-align: middle; margin-right: 10px;">
+   TIE-Age: <span style="font-weight: normal;">An interactive tool for age estimation using stratigraphic tie points</span>
   </div>
 
   <div class="download-buttons" style="display: flex; align-items: center; gap: 12px;">
@@ -98,9 +130,13 @@ body > .container-fluid {
   </div>
 </div>
 
+
+
 </style>
 
 
+
+<!-- IFRAME -->
 <div class="centered-iframe-wrapper">
-  <iframe class="responsive-iframe" src="https://partha679.shinyapps.io/18osl/"></iframe>
+  <iframe class="responsive-iframe" src="https://partha679.shinyapps.io/TIE_age/"></iframe>
 </div>
