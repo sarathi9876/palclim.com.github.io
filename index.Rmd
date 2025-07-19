@@ -180,10 +180,10 @@ html, body {
 
 <div class="palclim-about" style="background: white; border-radius: 16px; box-shadow: 0 4px 14px rgba(0,0,0,0.08); padding: 30px; margin-bottom: 30px; color: #0d47a1; font-size: 16px; line-height: 1.6; text-align: justify;">
   <p>
-    <b>PalClim</b> is a digital initiative focused on developing accessible, browser-based tools for climate and paleoclimate researchers. These tools simplify complex geochemical calculations, facilitate δ<sup>18</sup>O corrections, visualize proxy datasets, and much more — all without the need for installation or programming expertise.
+    <b>PALClim</b> is a digital initiative focused on developing accessible, browser-based tools for climate and paleoclimate researchers. These tools simplify complex geochemical calculations, facilitate δ<sup>18</sup>O corrections, visualize proxy datasets, and much more — all without the need for installation or programming expertise.
   </p>
   <p>
-    Designed for early-career scientists, educators, and field researchers, PalClim combines robust science with user-friendly interfaces. Whether you're analyzing marine sediment records, interpreting temperature proxies, or teaching isotope geochemistry, PalClim aims to support your work.
+    Designed for early-career scientists, educators, and field researchers, PalClim combines robust science with user-friendly interfaces. Whether you're analyzing marine sediment records, interpreting temperature proxies, or teaching isotope geochemistry, PalClim aims to support your work. 
   </p>
   <p>
     The entire platform — including hosting and tool development — is built and maintained by 
@@ -191,10 +191,10 @@ html, body {
       <a href="https://www.parthasarathi.info" target="_blank" style="color: #0d47a1; text-decoration: none;">
         Dr. Partha Sarathi Jena
       </a>
-    </b>, a postdoctoral researcher at the University of São Paulo, Brazil.
+    </b>, a postdoctoral researcher at the University of São Paulo, Brazil. Dr. Jena welcomes collaborations on future tool development projects. If you have an idea, feel free to reach out to him. 
   </p>
   <p style="font-style: italic; font-weight: 350;">
-    This website and its services are personally funded by Dr. Jena without any sponsorship. If you find PalClim useful in your research or teaching, you're warmly welcome to support its development and future tools. If you know Dr. Jena personally contact him for donations. 
+    This website and its services are personally funded by Dr. Jena without any sponsorship. If you find PalClim useful in your research or teaching, you're warmly welcome to support its development and future tools. If you know Dr. Jena personally, you may contact him directly for donations. 
   </p>
 </div>
 
