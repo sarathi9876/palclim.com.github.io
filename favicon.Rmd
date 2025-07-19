@@ -1,11 +1,2 @@
----
-title: ""
-site: "index.html"
-output:
-  html_document:
-    theme: cosmo
-    highlight: textmate
-    self_contained: false
----
 
 <link rel="icon" type="image/png" href="logo/Palclim.png">
