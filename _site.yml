@@ -11,10 +11,12 @@ navbar:
       menu:
         - text: "18OSW"
           href: osl18.html
-    - text: "Chron"
+    - text: "QChron"
       menu:
         - text: "Tie age"
           href: tie_age.html
+        - text: "AgeD"
+          href: AgeD.html
 
 
 output:
